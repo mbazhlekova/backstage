@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { EntityFilter, EntitiesSearchFilter } from '../../database';
+import { EntitiesSearchFilter, EntityFilter } from '../../database';
 
 /**
  * Forms a full Filters object based on a single key-value(s) object.

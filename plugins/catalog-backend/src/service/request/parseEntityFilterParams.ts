@@ -15,7 +15,7 @@
  */
 
 import { InputError } from '@backstage/errors';
-import { EntityFilter, EntitiesSearchFilter } from '../../database';
+import { EntitiesSearchFilter, EntityFilter } from '../../database';
 import { parseStringsParam } from './common';
 
 /**
