@@ -21,6 +21,7 @@ export type {
   Database,
   DbEntityRequest,
   DbEntityResponse,
+  EntitiesSearchFilter,
   EntityPagination,
   Transaction,
   DbEntitiesRequest,
