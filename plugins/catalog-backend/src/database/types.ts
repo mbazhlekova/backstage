@@ -38,8 +38,8 @@ export type DbEntityRequest = {
 };
 
 export type DbEntitiesRequest = {
-  filter?: Filters;
-  authorizationFilters?: Filters;
+  filter?: EntityFilter;
+  authorizationFilters?: EntityFilter;
   pagination?: EntityPagination;
 };
 
@@ -126,6 +126,8 @@ export type EntitiesSearchFilter = {
    */
   matchValueExists?: boolean;
 };
+
+export type EntityFilter = Filters<EntitiesSearchFilter>;
 
 /**
  * A pagination rule for entities.

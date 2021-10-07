@@ -14,9 +14,8 @@
  * limitations under the License.
  */
 
-import { Filters } from '@backstage/backend-common';
 import { Entity, EntityRelationSpec, Location } from '@backstage/catalog-model';
-import { EntityPagination } from '../database/types';
+import { EntityFilter, EntityPagination } from '../database/types';
 
 //
 // Entities
@@ -33,7 +32,7 @@ export type PageInfo =
 
 export type EntitiesRequest = {
   authorizationToken?: string;
-  filter?: Filters;
+  filter?: EntityFilter;
   fields?: (entity: Entity) => Entity;
   pagination?: EntityPagination;
 };
