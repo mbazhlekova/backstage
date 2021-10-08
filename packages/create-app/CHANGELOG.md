@@ -1,5 +1,7 @@
 # @backstage/create-app
 
+## 0.3.45
+
 ## 0.3.44
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @backstage/plugin-graphiql
 
+## 0.2.20
+
+### Patch Changes
+
+- c8215e1fe6: Add experimental `experimentalInstallationRecipe` to `package.json`.
+
 ## 0.2.19
 
 ### Patch Changes
