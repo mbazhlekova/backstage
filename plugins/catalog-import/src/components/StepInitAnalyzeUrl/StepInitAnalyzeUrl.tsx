@@ -15,6 +15,7 @@
  */
 
 import { errorApiRef, useApi } from '@backstage/core-plugin-api';
+import { assertError } from '@backstage/errors';
 import { FormHelperText, Grid, TextField } from '@material-ui/core';
 import React, { useCallback, useState } from 'react';
 import { useForm } from 'react-hook-form';
@@ -113,7 +114,8 @@ export const StepInitAnalyzeUrl = ({
             break;
           }
         }
-      } catch (e) {
+      } catch (e: any) {
+        assertError(e);
         setError(e.data?.error?.message ?? e.message);
         setSubmitted(false);
       }
